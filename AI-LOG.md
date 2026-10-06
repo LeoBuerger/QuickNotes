@@ -1,7 +1,5 @@
 # AI-LOG
 
-Dieser Eintrag dokumentiert die tatsächliche AI-Unterstützung in dieser Sitzung. Die folgenden Arbeitsschritte gehören zum ursprünglichen Auftrag; es sind keine erfundenen Einzelprompts. Ein eigenes Verständnis oder eigene Änderungen wurden erst nach tatsächlicher Prüfung bestätigt.
-
 1. Prompt: „Wie verbinde ich das Ereignis aus NoteForm mit der Funktion zum Anlegen einer Notiz?“
    - KI-Antwort: „NoteForm sendet mit `emit('add', ...)` die Formulardaten. `@add="addNote"` in App.vue empfängt das Ereignis und übergibt diese Daten an `addNote`.“
    - Umsetzung/verstanden: Den Listener an NoteForm ergänzt. Ohne ihn wird das Formular geleert, aber keine Notiz angelegt.
